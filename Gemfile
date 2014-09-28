@@ -38,3 +38,7 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+gem 'haml-rails', '~> 0.5.3'
+gem 'twitter-bootstrap-rails', '~> 3.2.0'
+gem 'font-awesome-rails', '~> 4.2.0.0'
