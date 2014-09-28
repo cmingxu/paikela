@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :curiculiams
+
   get 'portal/index'
 
   get 'portal/job'

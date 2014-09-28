@@ -1,0 +1,31 @@
+%h1 Listing curiculiams
+
+%table
+  %tr
+    %th Teacher
+    %th Teacher name
+    %th Student
+    %th Student name
+    %th Begin at
+    %th End at
+    %th Status
+    %th
+    %th
+    %th
+
+  - @curiculiams.each do |curiculiam|
+    %tr
+      %td= curiculiam.teacher_id
+      %td= curiculiam.teacher_name
+      %td= curiculiam.student_id
+      %td= curiculiam.student_name
+      %td= curiculiam.begin_at
+      %td= curiculiam.end_at
+      %td= curiculiam.status
+      %td= link_to 'Show', curiculiam
+      %td= link_to 'Edit', edit_curiculiam_path(curiculiam)
+      %td= link_to 'Destroy', curiculiam, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Curiculiam', new_curiculiam_path

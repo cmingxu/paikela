@@ -42,3 +42,8 @@ gem 'spring',        group: :development
 gem 'haml-rails', '~> 0.5.3'
 gem 'twitter-bootstrap-rails', '~> 3.2.0'
 gem 'font-awesome-rails', '~> 4.2.0.0'
+
+gem 'carrierwave', '~> 0.10.0'
+gem 'settingslogic', '~> 2.0.9'
+gem 'capistrano', '~> 3.2.0'
+

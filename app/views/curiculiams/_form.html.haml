@@ -1,0 +1,31 @@
+= form_for @curiculiam do |f|
+  - if @curiculiam.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@curiculiam.errors.count, "error")} prohibited this curiculiam from being saved:"
+      %ul
+        - @curiculiam.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :teacher_id
+    = f.number_field :teacher_id
+  .field
+    = f.label :teacher_name
+    = f.text_field :teacher_name
+  .field
+    = f.label :student_id
+    = f.number_field :student_id
+  .field
+    = f.label :student_name
+    = f.text_field :student_name
+  .field
+    = f.label :begin_at
+    = f.number_field :begin_at
+  .field
+    = f.label :end_at
+    = f.number_field :end_at
+  .field
+    = f.label :status
+    = f.text_field :status
+  .actions
+    = f.submit 'Save'

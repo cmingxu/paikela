@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Teacher:
+  = @curiculiam.teacher_id
+%p
+  %b Teacher name:
+  = @curiculiam.teacher_name
+%p
+  %b Student:
+  = @curiculiam.student_id
+%p
+  %b Student name:
+  = @curiculiam.student_name
+%p
+  %b Begin at:
+  = @curiculiam.begin_at
+%p
+  %b End at:
+  = @curiculiam.end_at
+%p
+  %b Status:
+  = @curiculiam.status
+
+= link_to 'Edit', edit_curiculiam_path(@curiculiam)
+\|
+= link_to 'Back', curiculiams_path

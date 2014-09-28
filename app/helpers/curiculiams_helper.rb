@@ -1,0 +1,2 @@
+module CuriculiamsHelper
+end
